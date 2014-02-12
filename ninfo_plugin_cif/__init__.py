@@ -3,8 +3,8 @@ from ninfo import PluginBase
 class cif_plug(PluginBase):
     """This plugin returns any information from cif"""
     name    =    'cif'
-    title   =    'cif'
-    description   =  'Computer Search Engine'
+    title   =    'CIF'
+    description   =  'Collective Intelligence Framework'
     cache_timeout   =  60*60
     types   =    ['ip','ip6','hostname','username']
     local = False
