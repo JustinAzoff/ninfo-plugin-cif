@@ -1,0 +1,2 @@
+recursive-include ninfo_plugin_cif *.mako
+
