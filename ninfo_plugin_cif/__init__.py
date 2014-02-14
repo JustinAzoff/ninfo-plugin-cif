@@ -6,7 +6,7 @@ class cif_plug(PluginBase):
     title   =    'CIF'
     description   =  'Collective Intelligence Framework'
     cache_timeout   =  60*60
-    types   =    ['ip','ip6','hostname','username']
+    types   =    ['ip','ip6','cidr', 'cidr6', 'hostname','username']
     local = False
 
     def setup(self):
