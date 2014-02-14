@@ -11,7 +11,11 @@ class cif_plug(PluginBase):
 
     def setup(self):
         from cif_http_client import Client
-        self.cif = Client(**self.plugin_config) #should contain url, api_key, and optional arguments
+        http_options = {}
+        config = self.plugin_config.copy()
+        if config.pop("verify_ssl", None) == "false":
+            http_options = {"verify": False}
+        self.cif = Client(http_options=http_options, **config) #should contain url, api_key, and optional arguments
 
     def get_info(self, arg):
         results = self.cif.search(q=arg)
