@@ -19,7 +19,7 @@
     <td class="arg"> ${r['observable']}        </td>
     <td> ${r['confidence']}        </td>
     <td> ${r.get('description','')}    </td>
-    <td> ${r.get('tags','')}    </td>
+    <td> ${','.join(r.get('tags',[]))}    </td>
     <td> ${r.get('altid','')}  </td>
 </tr>
 %endfor
