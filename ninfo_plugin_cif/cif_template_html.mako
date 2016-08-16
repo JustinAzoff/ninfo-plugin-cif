@@ -17,7 +17,7 @@
 <tr>
     <td> ${r['time_first']}     </td>
     <td> ${r['time_last']}      </td>
-    <td> ${r['address']}        </td>
+    <td class="arg"> ${r['address']}        </td>
     <td> ${r['confidence']}        </td>
     <td> ${r['assessment']}     </td>
     <td> ${r['description']}    </td>
