@@ -1,1 +1,3 @@
+%if results:
 ${table}
+%endif
