@@ -32,7 +32,7 @@ class cif_plug(PluginBase):
 
         return {
             "results": results,
-            "table": self.make_table(results),
+            "table": str(self.make_table(results)),
         }
 
 plugin_class = cif_plug
